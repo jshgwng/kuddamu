@@ -31,7 +31,7 @@ public class User extends BaseEntity implements UserDetails {
     @Column(nullable = true)
     private String password;
     @Enumerated(EnumType.STRING)
-    private Role Role;
+    private Role role;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
