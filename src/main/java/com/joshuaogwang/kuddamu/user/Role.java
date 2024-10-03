@@ -1,2 +1,12 @@
-package com.joshuaogwang.kuddamu.user;public enum Role {
+package com.joshuaogwang.kuddamu.user;
+
+public enum Role {
+    ADMIN,
+    INCIDENT_REPORTER,
+    INCIDENT_RESPONDER,
+    ESCALATION_MANAGER,
+    HEALTH_WORKER,
+    SYSTEM_ADMINISTRATOR,
+    INCIDENT_COORDINATOR,
+    OBSERVER
 }
