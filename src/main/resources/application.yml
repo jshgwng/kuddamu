@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/kuddamu
+    username: root
+    password: "t3stCr3nd3ntial@2028"
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 56f2b58be51b22
+    password: 78968897cfcfbf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+jwt:
+  secret: d125f72e4985aacf783489a955ad93b6aa00a80c111745f69a44b23e578a3954
+  expirationMs: 3600000
