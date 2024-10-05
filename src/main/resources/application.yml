@@ -6,7 +6,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate:
@@ -29,5 +29,6 @@ jwt:
   expirationMs: 3600000
 
 api:
-  username: sandbox
-  key: atsk_7ede1ea879d59af319a4c2636b5d010f5d838f9e9ae4651ff90d4aab35ebab9a5885e081
+  username: drh_app
+#  key: atsk_7ede1ea879d59af319a4c2636b5d010f5d838f9e9ae4651ff90d4aab35ebab9a5885e081
+  key: atsk_2127050ab5ed4a310f09c6ecccb12200da179520d9a9a4c389c053d0ed7806f01a5077eb
