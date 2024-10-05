@@ -7,6 +7,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -56,5 +57,9 @@ public class UserService {
                 .build();
         blackListedTokenRepository.save(blackListedToken);
         return "Successful.";
+    }
+
+    public List<User> fetchUserByRoles(String role){
+        return userRepository.findByRole(role);
     }
 }

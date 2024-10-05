@@ -6,13 +6,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequiredArgsConstructor
 public class UssdController {
     private final UssdService ussdService;
 
-//    public UssdController(UssdService ussdService) {
-//        this.ussdService = ussdService;
-//    }
+    public UssdController(UssdService ussdService) {
+        this.ussdService = ussdService;
+    }
 
     @PostMapping("/ussd")
     public String handleUssdRequest(@RequestParam String sessionId,
