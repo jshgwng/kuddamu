@@ -27,3 +27,7 @@ spring:
 jwt:
   secret: d125f72e4985aacf783489a955ad93b6aa00a80c111745f69a44b23e578a3954
   expirationMs: 3600000
+
+api:
+  username: sandbox
+  key: atsk_7ede1ea879d59af319a4c2636b5d010f5d838f9e9ae4651ff90d4aab35ebab9a5885e081
